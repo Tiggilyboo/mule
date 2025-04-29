@@ -1,0 +1,12 @@
+[package]
+name = "mule"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ollama-rs = { version = "0.3.1", features = ["tool-implementations", "stream", "text-splitter", "macros"] }
+tokio = { version = "1", features = ["full"] }
+schemars = { version = "0.8.22", features = ["preserve_order"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+disk-persist = "0.1"
